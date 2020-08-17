@@ -40,7 +40,7 @@ public interface UserDao {
 
     //取消所有默认
     @Update("update tab_address set isdefault=0 where uid=#{uid}")
-    public int cancleDefault(int uid);
+    int cancleDefault(int uid);
 
     //设置默认
     @Update("update tab_address set isdefault=1 where aid=#{aid}")
